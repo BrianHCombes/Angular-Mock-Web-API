@@ -1,6 +1,11 @@
 <h1>
-    Welcome to {{ title }}!
-  </h1>
-<div *ngFor="let myarray of array">{{myarray}}
+    Welcome to {{ title }} 
+</h1>
+
+<button (click)="onSaveQuestions()">Save Questions</button> 
+
+<button (click)="onGetQuestions()">Get Questions</button> 
+
+<editor apiKey="lzlkf4t1qvjtid356kafllkafx5quoci0htkh5pxp41ilf73" [init]="{plugins: 'link'}" initialValue="Enter Question Here..."></editor>
+
     
-</div>
