@@ -8,23 +8,8 @@ import { HttpResponse } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'Angular-Mock-Web-API';
+  title = 'Angular-Mock-Web-API';
   
-/*     
-  sQuestions = {"array": [
-      { "id": 0, "desc": "singleQuestion0" },
-      { "id": 1, "desc": "singleQuestion1" },
-      { "id": 2, "desc": "singleQuestion2" },
-      { "id": 3, "desc": "singleQuestion3" },
-      { "id": 4, "desc": "singleQuestion4" },
-      { "id": 5, "desc": "singleQuestion5" },
-      { "id": 6, "desc": "singleQuestion6" },
-      { "id": 7, "desc": "singleQuestion7" },
-      { "id": 8, "desc": "singleQuestion8" },
-      { "id": 9, "desc": "singleQuestion9" }
-    ]
-  };
-*/
     
     sQuestions = [
       { "id": "0", "desc": "singleQuestion0" },
