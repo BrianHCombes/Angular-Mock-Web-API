@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FirebaseService } from './firebase.service';
+//import { FirebaseService } from './firebase.service';
+import { FirebaseService } from './create-question-page/firebase.service';
 import { HttpResponse } from '@angular/common/http';
 
 @Component({
@@ -23,14 +24,27 @@ export class AppComponent {
       { "id": "8", "desc": "singleQuestion8" },
       { "id": "9", "desc": "singleQuestion9" }
     ];
+    
+    sQuestions2 = [
+      { "id": "0", "desc": "singleQuestionA" },
+      { "id": "1", "desc": "singleQuestionB" },
+      { "id": "2", "desc": "singleQuestionC" },
+      { "id": "3", "desc": "singleQuestionD" },
+      { "id": "4", "desc": "singleQuestionE" },
+      { "id": "5", "desc": "singleQuestionF" },
+      { "id": "6", "desc": "singleQuestionG" },
+      { "id": "7", "desc": "singleQuestionH" },
+      { "id": "8", "desc": "singleQuestionI" },
+      { "id": "9", "desc": "singleQuestionJ" }
+    ];
         
   constructor(private firebaseService: FirebaseService){}
   
   onSaveQuestions() {
       
-        console.log(JSON.stringify(this.sQuestions));
+        console.log(JSON.stringify(this.sQuestions2));
 
-        this.firebaseService.storeQuestions(this.sQuestions)
+        this.firebaseService.storeQuestions(this.sQuestions2)
         .subscribe(
           (response) => console.log("-- " + response),
           (error) => console.log("** " + JSON.stringify(error))
