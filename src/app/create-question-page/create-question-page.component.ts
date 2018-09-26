@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-question',
-    templateUrl: './question.component.html'
+    selector: 'app-create-question-page',
+    templateUrl: './create-question-page.component.html'
     
 })
 
-export class QuestionComponent {
+export class CreateQuestionPageComponent {
     
     title = "Create a Question:";
     
